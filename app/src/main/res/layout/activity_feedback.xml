@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#607B1FA2"
     tools:context=".Feedback">
 
     <TextView
@@ -71,8 +72,8 @@
 
     <RatingBar
         android:id="@+id/ratingBar2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="245dp"
+        android:layout_height="56dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
