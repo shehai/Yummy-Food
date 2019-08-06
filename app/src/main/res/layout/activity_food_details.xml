@@ -85,6 +85,8 @@
 
 
 
+
+
                     </LinearLayout>
 
 
@@ -94,28 +96,298 @@
             </android.support.v7.widget.CardView>
 
 
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Order Now"
+
+            />
+
+        <!--image2-->
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_3"
+            android:layout_width="match_parent"
+            android:layout_height="180dp">
+
+
+            <ImageView
+                android:id="@+id/fried_rice_noodless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/fried_rice_noodles" />
+
+
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/food_name1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="8dp"
+                        android:padding="12dp"
+                        android:text=" Fried Rice Noodless"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+
+
+
+                    <LinearLayout
+                        android:id="@+id/layout_price1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_attach_money_black_24dp" />
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_weight="9"
+                            android:layout_height="wrap_content"
+                            android:text="200"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+
+                            />
 
 
 
 
 
 
+                    </LinearLayout>
 
 
+                </LinearLayout>
 
 
+            </android.support.v7.widget.CardView>
 
 
         </LinearLayout>
-       
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Order Now"
+
+            />
+
+        <!--image3-->
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_6"
+            android:layout_width="match_parent"
+            android:layout_height="180dp">
+
+
+            <ImageView
+                android:id="@+id/seafood_noodless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/seafood_fry_noodless" />
+
+
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/food_name3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="8dp"
+                        android:padding="12dp"
+                        android:text=" Seafood Fried Noodless"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+
+
+
+                    <LinearLayout
+                        android:id="@+id/layout_price3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_attach_money_black_24dp" />
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_weight="9"
+                            android:layout_height="wrap_content"
+                            android:text="200"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+
+                            />
 
 
 
 
 
 
+                    </LinearLayout>
 
 
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Order Now"
+
+            />
+        <!--image4-->
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_8"
+            android:layout_width="match_parent"
+            android:layout_height="180dp">
+
+
+            <ImageView
+                android:id="@+id/spagetti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/spagetti" />
+
+
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/food_name2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="8dp"
+                        android:padding="12dp"
+                        android:text=" Spagetti"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+
+
+
+                    <LinearLayout
+                        android:id="@+id/layout_price2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_attach_money_black_24dp" />
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_weight="9"
+                            android:layout_height="wrap_content"
+                            android:text="200"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+
+                            />
+
+
+
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Order Now"
+
+            />
 
 
     </LinearLayout>
