@@ -85,6 +85,8 @@
 
 
 
+
+
                     </LinearLayout>
 
 
@@ -93,6 +95,17 @@
 
             </android.support.v7.widget.CardView>
 
+            <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+
+                ></com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+
+            
+
+
+
+            
 
 
 
@@ -107,7 +120,7 @@
 
 
         </LinearLayout>
-       
+
 
 
 
