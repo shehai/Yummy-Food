@@ -9,17 +9,18 @@ import android.widget.TextView;
 
 public class Payment extends AppCompatActivity {
 
-    TextView textView6;
+    TextView textView8;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_payment);
-        textView6 = findViewById(R.id.textView);
+        textView8 = findViewById(R.id.textView);
     }
 
     public void startnewActivity(View view){
         Intent intent = new Intent(Payment.this,Feedback.class);
         startActivity(intent);
     }
+
 }
