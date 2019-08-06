@@ -14,4 +14,10 @@
     <string name="message_8">Rate Now</string>
     <string name="message_9">Payment</string>
     <string name="message_10">Debit/Credit card No</string>
+    <string name="ULogin">--LOGIN--</string>
+    <string name="USname">Username</string>
+    <string name="USPword">Password</string>
+    <string name="USlog">CONTINUE</string>
+    <string name="Info">No of attempts remaining:</string>
+    <string name="CRaccount">CREATE ACCOUNT</string>
 </resources>
