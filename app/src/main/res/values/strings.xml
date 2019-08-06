@@ -7,10 +7,11 @@
     <string name="message_4">Food No</string>
     <string name="message_5">Contact Number</string>
     <string name="button">Back</string>
-    <string name="button_1">Next</string>
+    <string name="button_1">Feedback</string>
     <string name="message_6">Give your rating</string>
     <string name="message_7">Give your Feedback</string>
     <string name="button_2">Submit</string>
     <string name="message_8">Rate Now</string>
     <string name="message_9">Payment</string>
+    <string name="message_10">Debit/Credit card No</string>
 </resources>
