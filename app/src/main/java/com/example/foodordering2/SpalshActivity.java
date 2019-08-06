@@ -20,7 +20,7 @@ public class SpalshActivity extends AppCompatActivity {
             @Override
             public void run() {
 
-                Intent intent = new Intent(SpalshActivity.this,MainActivity.class);
+                Intent intent = new Intent(SpalshActivity.this,login.class);
 
                 startActivity(intent);
 

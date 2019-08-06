@@ -28,7 +28,7 @@ public class login extends AppCompatActivity {
             setContentView(R.layout.activity_main);
 
 
-            LOGIN = (TextView)findViewById(R.id.USlog);
+            LOGIN = (TextView)findViewById(R.id.ULogin);
             Username = (EditText)findViewById(R.id.USname);
             Password = (EditText) findViewById(R.id.USPword);
             CONTINUE = (Button) findViewById(R.id.USlog);
