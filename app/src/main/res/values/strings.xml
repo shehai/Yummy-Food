@@ -20,4 +20,5 @@
     <string name="USlog">CONTINUE</string>
     <string name="Info">No of attempts remaining:</string>
     <string name="CRaccount">CREATE ACCOUNT</string>
+    <string name="button_5">Submit</string>
 </resources>
