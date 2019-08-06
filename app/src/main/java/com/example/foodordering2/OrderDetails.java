@@ -19,31 +19,36 @@ public class OrderDetails extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_order_details);
 
-        //get value from the intent
+       /*//get value from the intent
         final Intent intent = getIntent();
         Bundle bundle = intent.getExtras();
         String userName = bundle.getString("name");
         String foodPrice = bundle.getString("price");
 
-        // Setting the name to text vie
+        */
+
+        //Setting the name to text vie
         txt1 =(EditText) findViewById(R.id.editText10);
         txt1 =(EditText) findViewById(R.id.editText11);
 
-        txt1.setText( userName);
-        txt2.setText(foodPrice);
+       // txt1.setText( userName);
+        //txt2.setText(foodPrice);
+        btn = (Button) findViewById(R.id.btn_purchase);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                String s = txt1.getText().toString();
+                /*String s = txt1.getText().toString();
                 String p = txt2.getText().toString();
+
+                 intent1.putExtra("name",s);
+                intent1.putExtra("price",p);*/
+
                 Intent intent1 = new Intent(OrderDetails.this,Payment.class);
 
-                intent1.putExtra("name",s);
-                intent1.putExtra("price",p);
 
-                startActivity(intent);
+                startActivity(intent1);
             }
         });
 

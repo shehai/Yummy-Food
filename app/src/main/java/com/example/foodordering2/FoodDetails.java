@@ -33,13 +33,15 @@ public class FoodDetails extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                String s = tx1.getText().toString();
+               /* String s = tx1.getText().toString();
                 String p = tx2.getText().toString();
+
+                i.putExtra("name",s);
+                i.putExtra("price",p);*/
 
                 Intent i = new Intent(FoodDetails.this,OrderDetails.class);
 
-                i.putExtra("name",s);
-                i.putExtra("price",p);
+
 
                 startActivity(i);
 
