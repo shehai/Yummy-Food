@@ -22,4 +22,5 @@ public class Payment extends AppCompatActivity {
         Intent intent = new Intent(Payment.this,Feedback.class);
         startActivity(intent);
     }
+
 }
