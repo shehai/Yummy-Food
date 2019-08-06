@@ -71,11 +71,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:src="@drawable/ic_attach_money_black_24dp" />
+
                         <TextView
 
+                            android:id="@+id/txt1"
                             android:layout_width="0dp"
-                            android:layout_weight="9"
                             android:layout_height="wrap_content"
+                            android:layout_weight="9"
                             android:text="200"
                             android:textSize="18sp"
                             android:textStyle="bold"
@@ -99,6 +101,7 @@
         </LinearLayout>
 
         <Button
+            android:id="@+id/btn1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="Order Now"
