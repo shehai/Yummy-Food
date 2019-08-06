@@ -32,6 +32,8 @@ public class Payment extends AppCompatActivity {
         editText = (EditText) findViewById(R.id.editText);
         editText1 = (EditText) findViewById(R.id.editText6);
 
+        editText.setText(message);
+        editText1.setText(message1);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
