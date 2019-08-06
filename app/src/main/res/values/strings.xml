@@ -2,7 +2,7 @@
     <string name="app_name">FoodOrdering2</string>
     <string name="action_settings">Settings</string>
     <string name="message_1">Name</string>
-    <string name="message_2">Address</string>
+    <string name="message_2">Price</string>
     <string name="message_3">Food No</string>
     <string name="message_4">Food No</string>
     <string name="message_5">Contact Number</string>
