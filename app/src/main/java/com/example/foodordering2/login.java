@@ -25,25 +25,25 @@ public class login extends AppCompatActivity {
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_main);
+            setContentView(R.layout.activity_login);
 
 
-            LOGIN = (TextView)findViewById(R.id.ULogin);
+            /*LOGIN = (TextView)findViewById(R.id.ULogin);
             Username = (EditText)findViewById(R.id.USname);
             Password = (EditText) findViewById(R.id.USPword);
             CONTINUE = (Button) findViewById(R.id.USlog);
             Info = (TextView)findViewById(R.id.Info);
             CREATEACCOUNT = (Button) findViewById(R.id.CRaccount);
 
-            Info.setText("No of attempts remaining:5");
+            Info.setText("No of attempts remaining:5");*/
 
 
-            CONTINUE.setOnClickListener(new View.OnClickListener() {
+            /*CONTINUE.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     validate(Username.getText().toString(),Password.getText().toString());
                 }
-            });
+            });*/
 
             CREATEACCOUNT.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -57,7 +57,7 @@ public class login extends AppCompatActivity {
 
         }
 
-        private void validate (String name,String userPassword){
+       /* private void validate (String name,String userPassword){
             if((name == "Admin") && (userPassword == "1234")){
                 Intent intent = new Intent(login.this,Registration.class);
                 startActivity(intent);
@@ -70,7 +70,7 @@ public class login extends AppCompatActivity {
                     CONTINUE.setEnabled(false);
                 }
             }
-        }
+        }*/
 
 
     }

@@ -20,12 +20,11 @@ public class SpalshActivity extends AppCompatActivity {
             @Override
             public void run() {
 
-                Intent intent = new Intent(SpalshActivity.this,login.class);
+                Intent intent = new Intent(SpalshActivity.this, Login01.class);
 
                 startActivity(intent);
 
-                finish();
             }
-        }, 3000);
+        }, 1000);
     }
 }
