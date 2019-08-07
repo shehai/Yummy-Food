@@ -24,16 +24,16 @@ public class Payment extends AppCompatActivity {
 
         btn = findViewById(R.id.button2);
 
-        Intent intent = getIntent();
+       /* Intent intent = getIntent();
         Bundle bundle = intent.getExtras();
         String message = bundle.getString("name");
-        String message1 = bundle.getString("price");
+        String message1 = bundle.getString("price");*/
 
         editText = (EditText) findViewById(R.id.editText);
         editText1 = (EditText) findViewById(R.id.editText6);
 
-        editText.setText(message);
-        editText1.setText(message1);
+        //editText.setText(message);
+        //editText1.setText(message1);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
