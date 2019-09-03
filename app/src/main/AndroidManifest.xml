@@ -15,7 +15,6 @@
 
         <activity android:name=".OrderDetails"></activity>
 
-        <activity android:name=".login" />
         <activity android:name=".Feedback" />
         <activity android:name=".Payment" />
         <activity android:name=".FoodDetails" />
