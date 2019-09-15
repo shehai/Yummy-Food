@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.foodordering2">
+    package="com.example.foodordering2"
+
+    >
+
 
     <application
+
         android:allowBackup="true"
         android:banner="@drawable/splash"
         android:icon="@drawable/splash_icon"
@@ -11,14 +16,21 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".Registration01"></activity>
+        <uses-library android:name="android.test.runner"
+            android:required="false" />
+        <uses-library android:name="android.test.base"
+            android:required="false" />
+        <uses-library android:name="android.test.mock"
+            android:required="false" />
 
-        <activity android:name=".OrderDetails"></activity>
+        <activity android:name=".view.Registration01"></activity>
 
-        <activity android:name=".Feedback" />
-        <activity android:name=".Payment" />
-        <activity android:name=".FoodDetails" />
-        <activity android:name=".SpalshActivity">
+        <activity android:name=".view.OrderDetails"></activity>
+
+        <activity android:name=".view.Feedback" />
+        <activity android:name=".view.Payment" />
+        <activity android:name=".view.FoodDetails" />
+        <activity android:name=".view.SpalshActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -26,10 +38,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".view.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".Login01" />
+        <activity android:name=".view.Login01" />
     </application>
 
 </manifest>

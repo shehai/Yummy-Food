@@ -32,4 +32,6 @@
     <string name="order_food_name">Name</string>
     <string name="order_food_price">Price</string>
     <string name="btn_purchase">Purchase Order</string>
+    <string name="adminLink">I\'m a admin?</string>
+    <string name="userLink">I\'m not a admin?</string>
 </resources>

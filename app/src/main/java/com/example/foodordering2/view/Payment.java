@@ -1,13 +1,15 @@
-package com.example.foodordering2;
+package com.example.foodordering2.view;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.foodordering2.R;
 
 public class Payment extends AppCompatActivity {
 
@@ -44,7 +46,7 @@ public class Payment extends AppCompatActivity {
     }
 
     public void startnewActivity(View view){
-        Intent intent = new Intent(Payment.this,Feedback.class);
+        Intent intent = new Intent(Payment.this, Feedback.class);
         startActivity(intent);
     }
 

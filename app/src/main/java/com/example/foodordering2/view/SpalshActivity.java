@@ -1,9 +1,11 @@
-package com.example.foodordering2;
+package com.example.foodordering2.view;
 
 import android.content.Intent;
 import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.foodordering2.R;
 
 public class SpalshActivity extends AppCompatActivity {
 

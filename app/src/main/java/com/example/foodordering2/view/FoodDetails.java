@@ -1,11 +1,13 @@
-package com.example.foodordering2;
+package com.example.foodordering2.view;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.example.foodordering2.R;
 
 public class FoodDetails extends AppCompatActivity {
 
@@ -39,7 +41,7 @@ public class FoodDetails extends AppCompatActivity {
                 i.putExtra("name",s);
                 i.putExtra("price",p);*/
 
-                Intent i = new Intent(FoodDetails.this,OrderDetails.class);
+                Intent i = new Intent(FoodDetails.this, OrderDetails.class);
 
 
 

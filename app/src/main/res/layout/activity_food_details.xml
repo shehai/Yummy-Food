@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FoodDetails"
+    tools:context=".view.FoodDetails"
 
 
     >
@@ -14,7 +14,7 @@
         android:orientation="vertical"
         >
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:id="@+id/card_1"
             android:layout_width="match_parent"
             android:layout_height="180dp">
@@ -28,7 +28,7 @@
                 app:srcCompat="@drawable/cafe_capsicum" />
 
 
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
         
         <LinearLayout
             android:layout_width="match_parent"
@@ -37,7 +37,7 @@
             >
 
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:id="@+id/card_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -96,7 +96,7 @@
                 </LinearLayout>
 
 
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
 
         </LinearLayout>
@@ -111,7 +111,7 @@
 
         <!--image2-->
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:id="@+id/card_3"
             android:layout_width="match_parent"
             android:layout_height="180dp">
@@ -125,7 +125,7 @@
                 app:srcCompat="@drawable/fried_rice_noodles" />
 
 
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -134,7 +134,7 @@
             >
 
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:id="@+id/card_4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -191,7 +191,7 @@
                 </LinearLayout>
 
 
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
 
         </LinearLayout>
@@ -206,7 +206,7 @@
 
         <!--image3-->
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:id="@+id/card_6"
             android:layout_width="match_parent"
             android:layout_height="180dp">
@@ -220,7 +220,7 @@
                 app:srcCompat="@drawable/seafood_fry_noodless" />
 
 
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -229,7 +229,7 @@
             >
 
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:id="@+id/card_7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -286,7 +286,7 @@
                 </LinearLayout>
 
 
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
 
         </LinearLayout>
@@ -300,7 +300,7 @@
             />
         <!--image4-->
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:id="@+id/card_8"
             android:layout_width="match_parent"
             android:layout_height="180dp">
@@ -314,7 +314,7 @@
                 app:srcCompat="@drawable/spagetti" />
 
 
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -323,7 +323,7 @@
             >
 
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:id="@+id/card_5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -380,7 +380,7 @@
                 </LinearLayout>
 
 
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
 
         </LinearLayout>

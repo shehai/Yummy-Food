@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".MainActivity"
+    tools:context=".view.MainActivity"
     tools:showIn="@layout/activity_main" >
 
     <LinearLayout
@@ -13,7 +13,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:id="@+id/cd_1"
             android:layout_height="180dp">
@@ -32,9 +32,9 @@
                 android:text="Noodless"
                 android:textColor="@color/colorAccent"
                 android:textSize="36sp" />
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:id="@+id/cd_2"
             android:layout_height="180dp">
@@ -53,9 +53,9 @@
                 android:text="Pizza"
                 android:textColor="@color/colorAccent"
                 android:textSize="36sp" />
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:id="@+id/cd_3"
             android:layout_height="180dp">
@@ -74,8 +74,8 @@
                 android:text="Rice"
                 android:textColor="@color/colorAccent"
                 android:textSize="36sp" />
-        </android.support.v7.widget.CardView>
-        <android.support.v7.widget.CardView
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:id="@+id/cd_4"
             android:layout_height="180dp">
@@ -94,9 +94,9 @@
                 android:text="Cakes"
                 android:textColor="@color/colorAccent"
                 android:textSize="36sp" />
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:id="@+id/cd_5"
             android:layout_height="180dp">
@@ -115,7 +115,7 @@
                 android:text="Pastry"
                 android:textColor="@color/colorAccent"
                 android:textSize="36sp" />
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
 
 
