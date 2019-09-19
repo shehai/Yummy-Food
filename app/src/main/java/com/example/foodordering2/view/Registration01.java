@@ -30,6 +30,7 @@ public class Registration01 extends AppCompatActivity {
     private EditText userName;
     private EditText useEmail;
     private EditText userPwd;
+    private  EditText userPhone;
     private Button button;
     private ProgressDialog progressBar;
 
@@ -41,6 +42,7 @@ public class Registration01 extends AppCompatActivity {
         userName= (EditText)findViewById(R.id.UName);
          useEmail= (EditText) findViewById(R.id.UEmail);
          userPwd= (EditText) findViewById(R.id.UPword);
+         userPhone=(EditText)findViewById(R.id.UPhone);
         button = (Button) findViewById(R.id.UFin);
         progressBar= new ProgressDialog(this);
 
@@ -59,7 +61,8 @@ public class Registration01 extends AppCompatActivity {
     private void CreateUser() {
          String name= userName.getText().toString();
          String email= useEmail.getText().toString();
-         String pwd= userPwd.getText().toString().trim();
+         String pwd= userPwd.getText().toString();
+         String phone=userPhone.getText().toString();
 
         if(TextUtils.isEmpty(name)){
 
@@ -75,6 +78,10 @@ public class Registration01 extends AppCompatActivity {
 
             Toast.makeText(this,"Please Enter your  password",Toast.LENGTH_LONG).show();
         }
+        else if(TextUtils.isEmpty(phone)){
+
+            Toast.makeText(this,"Please Enter your  phone number",Toast.LENGTH_LONG).show();
+        }
 
         else {
 
@@ -83,12 +90,12 @@ public class Registration01 extends AppCompatActivity {
             progressBar.setCanceledOnTouchOutside(false);
             progressBar.show();
             
-           ValidateEmail(name,email,pwd);
+           ValidateEmail(name,email,pwd,phone);
         }
 
     }
 
-    private void ValidateEmail(final String name, final String email, final String pwd) {
+    private void ValidateEmail(final String name, final String email, final String pwd, final String phone) {
 
 
         final DatabaseReference RootRef;
@@ -98,11 +105,12 @@ public class Registration01 extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot)
             {
-                if (!(dataSnapshot.child("Users").child(email).exists()))
+                if (!(dataSnapshot.child("Users").child(phone).exists()))
                 {
                     HashMap<String, Object> userdataMap = new HashMap<>();
+                    userdataMap.put("phone", email);
                     userdataMap.put("email", email);
-                    userdataMap.put("password",pwd);
+                    userdataMap.put("pwd",pwd);
                     userdataMap.put("name",name);
 
                     RootRef.child("Users").child(email).updateChildren(userdataMap)
@@ -128,7 +136,7 @@ public class Registration01 extends AppCompatActivity {
                 }
                 else
                 {
-                    Toast.makeText(Registration01.this, "This " + email + " already exists.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Registration01.this, "This " + phone + " already exists.", Toast.LENGTH_SHORT).show();
                     progressBar.dismiss();
                     Toast.makeText(Registration01.this, "Please try again using another phone number.", Toast.LENGTH_SHORT).show();
 
