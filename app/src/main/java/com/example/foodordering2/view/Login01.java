@@ -139,7 +139,7 @@ Login01 extends AppCompatActivity {
                                 Toast.makeText(Login01.this, "Welcome Admin, you are logged in Successfully...", Toast.LENGTH_SHORT).show();
                                 loadingBar.dismiss();
 
-                                Intent intent = new Intent(Login01.this,AdminManageActivity.class);
+                                Intent intent = new Intent(Login01.this,AdminManageActivity .class);
                                 startActivity(intent);
                             }
                             else if (parentDbName.equals("Users"))

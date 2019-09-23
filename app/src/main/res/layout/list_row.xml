@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+
+        android:id="@+id/cd_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Noodless"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:layout_below="@+id/textView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:cropToPadding="false"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView5"
+                android:text="Price"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/price"
+                android:layout_marginTop="2dp"
+                android:text="Description"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/order_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/description"
+                android:text="Order Now" />
+
+
+
+
+        </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

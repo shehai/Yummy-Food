@@ -23,7 +23,7 @@ public class AdminManageActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent=new Intent(AdminManageActivity.this,AddNewFood.class);
+                Intent intent=new Intent(AdminManageActivity.this,AdminAddNewFood.class);
 
                 startActivity(intent);
 

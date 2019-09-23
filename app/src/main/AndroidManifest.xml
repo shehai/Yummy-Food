@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.foodordering2">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:banner="@drawable/splash"
@@ -10,7 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".view.AddNewFood"></activity>
+        <activity android:name=".view.AdminAddNewFood"></activity>
         <activity android:name=".view.AdminManageActivity" />
 
         <uses-library
@@ -27,7 +29,6 @@
         <activity android:name=".view.OrderDetails" />
         <activity android:name=".view.Feedback" />
         <activity android:name=".view.Payment" />
-        <activity android:name=".view.FoodDetails" />
         <activity android:name=".view.SpalshActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

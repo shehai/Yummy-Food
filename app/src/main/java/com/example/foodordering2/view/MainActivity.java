@@ -4,18 +4,39 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import com.example.foodordering2.R;
+import com.example.foodordering2.ViewHolder.FoodViewHolder;
+import com.example.foodordering2.model.Food;
+import com.firebase.ui.database.FirebaseRecyclerAdapter;
+import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.squareup.picasso.Picasso;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
 import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.ViewGroup;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    CardView cd1,cd2,cd3,cd4,cd5,cd6,cd7;
+    private DatabaseReference FoodRef;
+    private RecyclerView recyclerView;
+
+
+    RecyclerView.LayoutManager layoutManager;
+
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,16 +45,14 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        cd1=(CardView) findViewById(R.id.cd_1);
+        FoodRef = FirebaseDatabase.getInstance().getReference().child("Products");
 
-        cd1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, FoodDetails.class);
+        recyclerView= findViewById(R.id.recyclerView);
+        recyclerView.setHasFixedSize(true);
+        layoutManager = new LinearLayoutManager(this);
+        recyclerView.setLayoutManager(layoutManager);
+       // btn = (Button)findViewById(R.id.order_btn) ;
 
-                startActivity(intent);
-            }
-        });
 
 
         FloatingActionButton fab = findViewById(R.id.fab);
@@ -67,4 +86,53 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    @Override
+    protected void onStart()
+    {
+        super.onStart();
+
+        FirebaseRecyclerOptions<Food> options =
+                new FirebaseRecyclerOptions.Builder<Food>()
+                        .setQuery(FoodRef, Food.class)
+                        .build();
+
+
+        FirebaseRecyclerAdapter<Food, FoodViewHolder> adapter =
+                new FirebaseRecyclerAdapter<Food, FoodViewHolder>(options) {
+                    @Override
+                    protected void onBindViewHolder(@NonNull FoodViewHolder holder, int position, @NonNull Food model)
+                    {
+                        holder.txtProductName.setText(model.getName());
+                        holder.txtProductDescription.setText(model.getDescription());
+                        holder.txtProductPrice.setText("Price = Rs  " + model.getPrice());
+                        Picasso.get().load(model.getImage()).into(holder.imageView);
+
+                        holder.button.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                Intent intent = new Intent(MainActivity.this,OrderDetails.class);
+                                startActivity(intent);
+                            }
+                        });
+                    }
+
+                    @NonNull
+                    @Override
+                    public FoodViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType)
+                    {
+                        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_row, parent, false);
+                        FoodViewHolder holder = new FoodViewHolder(view);
+                        return holder;
+                    }
+                };
+        recyclerView.setAdapter(adapter);
+        adapter.startListening();
+
+
+
+    }
+
+
 }
+

@@ -32,7 +32,7 @@ public class OrderDetails extends AppCompatActivity {
         txt1 =(EditText) findViewById(R.id.editText10);
         txt1 =(EditText) findViewById(R.id.editText11);
 
-       // txt1.setText( userName);
+        // txt1.setText( userName);
         //txt2.setText(foodPrice);
         btn = (Button) findViewById(R.id.btn_purchase);
 

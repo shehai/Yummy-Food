@@ -108,12 +108,12 @@ public class Registration01 extends AppCompatActivity {
                 if (!(dataSnapshot.child("Users").child(phone).exists()))
                 {
                     HashMap<String, Object> userdataMap = new HashMap<>();
-                    userdataMap.put("phone", email);
+                    userdataMap.put("phone", phone);
                     userdataMap.put("email", email);
                     userdataMap.put("pwd",pwd);
                     userdataMap.put("name",name);
 
-                    RootRef.child("Users").child(email).updateChildren(userdataMap)
+                    RootRef.child("Users").child(phone).updateChildren(userdataMap)
                             .addOnCompleteListener(new OnCompleteListener<Void>() {
                                 @Override
                                 public void onComplete(@NonNull Task<Void> task)
