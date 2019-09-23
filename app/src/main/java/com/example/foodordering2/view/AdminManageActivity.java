@@ -12,6 +12,7 @@ import com.example.foodordering2.R;
 public class AdminManageActivity extends AppCompatActivity {
 
     private Button bt1;
+    private Button button6;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +28,20 @@ public class AdminManageActivity extends AppCompatActivity {
 
                 startActivity(intent);
 
+
+                button6=(Button)findViewById(R.id.button6);
+                button6.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+
+                        Intent intent= new Intent(AdminManageActivity.this,AdminshowPayment.class);
+
+                        startActivity(intent);
+                    }
+                });
             }
+
+
         });
     }
 }

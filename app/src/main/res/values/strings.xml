@@ -34,4 +34,7 @@
     <string name="btn_purchase">Purchase Order</string>
     <string name="adminLink">I\'m a admin?</string>
     <string name="userLink">I\'m not a admin?</string>
+    <string name="message_20">Payment Method</string>
+    <string name="message21">UPDATE</string>
+    <string name="message18">Show</string>
 </resources>
